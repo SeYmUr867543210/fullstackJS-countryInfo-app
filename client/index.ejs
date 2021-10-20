@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss.css">
+    <title>
+        <%= title %>
+    </title>
+</head>
+
+<body>
+    <h1 id="title">
+        <%= title %>
+    </h1>
+
+    <form action="/" class="countryOrCity_form">
+        <input type="text" id="countryOrCity_inp" title="country or city name you want get info">
+        <span id="countryOrCityInp_warning">* esli vy uje zakonchili pisat,to najmite "Enter"</span>
+    </form>
+
+    <div class="infoWrapper">
+        <div class="flag_wrapper">
+            <h3 id="flag_title">Flag</h3>
+            <img id="flag" src="">
+        </div>
+        <div class="region_wrapper">
+            <h3 id="region_title">Region</h3>
+            <div id="region"></div>
+        </div>
+        <div class="borders_wrapper">
+            <h3 id="borders_title">Borders</h3>
+            <div id="borders"></div>
+        </div>
+        <div class="countryName_wrapper">
+            <h3 id="countryName_title">Country Name</h3>
+            <div id="countryName"></div>
+        </div>
+        <div class="area_wrapper">
+            <h3 id="area_title">Area</h3>
+            <div id="area"></div>
+        </div>
+        <div class="population_wrapper">
+            <h3 id="population_title">Population</h3>
+            <div id="population"></div>
+        </div>
+        <div class="capital_wrapper">
+            <h3 id="capital_title">Capital</h3>
+            <div id="capital"></div>
+        </div>
+        <div class="capitalTimezone_wrapper">
+            <h3 id="capitalTimezone_title">Capital Time</h3>
+            <div id="capitalTimezone"></div>
+        </div>
+        <div class="countryCode_wrapper">
+            <h3 id="countryCode_title">Country Code</h3>
+            <div id="countryCode"></div>
+        </div>
+        <div class="language_wrapper">
+            <h3 id="language_title">Language</h3>
+            <div id="language"></div>
+        </div>
+        <div class="currency_wrapper">
+            <h3 id="currency_title">Currency</h3>
+            <div id="currency"></div>
+        </div>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+
+</html>
